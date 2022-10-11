@@ -1,10 +1,10 @@
 import React from 'react'
 import './list.scss'
 
-const LIst = () => {
+const List = () => {
   return (
     <div>LIst</div>
   )
 }
 
-export default LIst
+export default List
