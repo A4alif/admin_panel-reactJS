@@ -1,6 +1,6 @@
 .home{
-    background-color: purple;
-    .title{
-        color: white;
+    display: flex;
+    .homecontainer{
+        flex: 6;
     }
 }
