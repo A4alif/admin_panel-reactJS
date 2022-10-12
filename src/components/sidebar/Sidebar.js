@@ -18,7 +18,7 @@ const Sidebar = () => {
     <>
        <div className="sidebar">
        <div className="top">
-            <span className='logo' >Alif Shah</span>
+            <span className='logo' >Patient Portal</span>
         </div>
         <hr />
         <div className="center">
