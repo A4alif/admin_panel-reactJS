@@ -9,7 +9,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-const Chart = () => {
+const Chart = ({aspect, title}) => {
   const data = [
     {
       name: "January",
@@ -43,8 +43,8 @@ const Chart = () => {
   return (
     <>
       <div className="chart">
-        <div className="title">Last Five Month Revenue</div>
-        <ResponsiveContainer width="100%" aspect={2 / 1}>
+        <div className="title">{title}</div>
+        <ResponsiveContainer width="100%" aspect={aspect}>
           <AreaChart
             width={730}
             height={250}
