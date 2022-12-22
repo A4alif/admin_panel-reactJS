@@ -5,18 +5,19 @@ import {userColumns, userRows} from '../../dummydata/datatablesource'
 import { Link } from "react-router-dom";
 
 const Datatable = () => {
+    
   const actionColumn = [
     {
       field: "action",
       headerName : "Action",
       width: 200,
-      renderCell: () => {
+      renderCell: (params) => {
         return (
           <div className="cellAction">
             <Link to={"/users/id"} style={{ textDecoration: "none" }}>
             <div className="viewButton">View</div>
             </Link>
-            <div className="deleteButton">Delete</div>
+            <div  className="deleteButton">Delete</div>
           </div>
         )
       }
